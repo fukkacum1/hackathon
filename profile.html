@@ -75,8 +75,7 @@
             background: linear-gradient(90deg, #29574C, black);
             border-radius: 15px;
             box-shadow: 0 0 10px #00FCBF;
-            padding: 5px 10px;
-
+            padding: 15px 10px;
         }
 
         .x-info h2 {
@@ -99,13 +98,27 @@
         .btn-T {
             display: grid;
             gap: 10px;
-            height: 170px;            
+            height: 170px;
         }
+
         .btn-T button {
             border-radius: 10px;
             background: #00FCBF;
             font: 500 16px 'gilroy';
             text-transform: uppercase;
+        }
+
+        .btn-reg {
+            background-color: inherit;
+            border: 2px solid #00FCBF;
+            border-radius: 30px;
+            color: #00FCBF;
+            font: 400 20px 'gilroy';
+            margin-left: 0.5em;
+            padding-top: 5px;
+        }
+        .btn-reg a {
+            padding: 2px;
         }
 
 
@@ -145,21 +158,28 @@
             <p>НИКНЕЙМ УЧАСТНИКА</p>
         </div>
         <div class="x-info">
-            <h2>УЧАСТИЕ В ХАКАТОНЕ:</h2>
+            <!-- <h2>УЧАСТИЕ В ХАКАТОНЕ:</h2>
             <div style="display:flex; justify-content: space-between">
                 <p>НАЗВАНИЕ ХАКАТОНА</p>
                 <p style="padding-right: 1em;">XX.XX.XXXX</p>
+            </div> -->
+            <div style="display: flex; justify-content: center; align-items:center;">
+                <p style="color:#0DA07C">ПОРА ЗАПИСАТЬСЯ НА</p>
+                <button class="btn-reg"><a href="catalog.html">ХАКАТОН!</a></button>
             </div>
             <hr class="hr-dashed">
             <div class="btn-T">
                 <button>создать команду</button>
+                <div class="open-btn">
+                    <form class="" id="registration" method="post"></form>
+                </div>
                 <button>присоединиться к команде</button>
             </div>
         </div>
     </main>
     <footer>
         <button class="button-footer"><a href="index.html">Главная</a></button>
-        <button class="button-footer">Хакатоны</button>
+        <button class="button-footer"><a href="catalog.html">Хакатоны</a></button>
     </footer>
 </body>
 
