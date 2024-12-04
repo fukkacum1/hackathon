@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <title>Document</title>
+</head>
+
+<style>
+    *,
+    *::before,
+    *::after {
+        box-sizing: inherit;
+    }
+
+    body {
+        box-sizing: border-box;
+        font-size: 16px;
+        color: white;
+        background: black;
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+    }
+
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .catalog {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        align-items: flex-end;
+    }
+
+    .img-line-top2 {
+        width: 100%;
+        position: fixed;
+        top: -13%;
+        left: 30%;
+    }
+
+    .img-line-top3 {
+        width: 120%;
+        position: fixed;
+        top: -5%;
+        left: -5%;
+    }
+
+    .img-line-bottom2 {
+        width: 130%;
+        position: fixed;
+        top: 65%;
+        left: -42%;
+        z-index: 2;
+    }
+
+    .catalog-content {
+        height: 80vh;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        border-radius: 10px;
+    }
+
+    .catalog-title {
+        font-family: 'tektur';
+        font-size: 48px;
+        color: white;
+        margin: 0;
+        text-align: center;
+        z-index: 1;
+    }
+
+    .cards-wrapper {
+        overflow: auto;
+        scroll-behavior: smooth;
+        z-index: 1;
+        padding-bottom: 50px;
+    }
+
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+        height: 235px;
+        width: 350px;
+        background-color: #26564A;
+        border-radius: 10px;
+        margin: 20px;
+        padding: 15px;
+    }
+
+    .logo-img {
+        border-radius: 100%;
+        background-color: grey;
+        height: 66px;
+        width: 66px;
+    }
+
+    .cards-name {
+        padding-right: 0;
+        font-family: 'tektur';
+        font-size: 20px;
+        height: 25px;
+        padding-left: 25px;
+    }
+
+    .description {
+        list-style-type: none;
+        display: flex;
+        margin: 0;
+        padding-inline-start: 0;
+        height: 21px;
+        align-items: flex-start;
+
+    }
+
+    .description li {
+        margin: 0 5px;
+        font-family: 'tektur';
+        font-weight: 500;
+        font-size: 16px;
+        color: #999999;
+    }
+
+    .cards-date {
+        font-family: 'bebas neue';
+        font-size: 20px;
+        margin: 0;
+    }
+
+    .footer {
+        position: fixed;
+        align-items: flex-end;
+        background-color: #00FCBF;
+        bottom: 0;
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+        padding: 7px 0;
+        z-index: 10;
+    }
+
+    .button-footer {
+        background-color: #00FCBF;
+        border: solid 2px #29574C;
+        background-color: #29574C;
+        border-radius: 10px;
+        width: 47%;
+        height: 50px;
+        color: white;
+        font-family: 'tektur';
+        font-size: 20px;
+        cursor: pointer;
+        padding: 2px;
+    }
+</style>
+
+<body>
+    <div class="catalog" id="Catalog">
+        <div class="img-back">
+            <img class="img-line-top2" src="/img/linetop1.png" alt="">
+            <img class="img-line-top3" src="/img/linetop2.png" alt="">
+            <img class="img-line-bottom2" src="/img/linebottom2.png" alt="">
+        </div>
+        <div class="catalog-content">
+            <h2 class="catalog-title">Хакатоны</h1>
+                <div class="cards-wrapper">
+                    <div id="cards-btn">
+                        <a class="cards" href="reg-form.html">
+                            <img class=" logo-img" src="" alt="logo">
+                            <h3 class="cards-name">Название хакатона</h3>
+                            <ul class="description">
+                                <li>КЕЙСЫ</li>
+                                <li>ТЕМАТИКА</li>
+                                <li>ГЛАВНЫЙ ПРИЗ</li>
+                            </ul>
+                            <p class="cards-date">XX.XX.XXXX дата регистрации</p>
+                            <p class="cards-date">XX.XX.XXXX начало хакатона</p>
+                        </a>
+                    </div>
+
+                    <div id="cards-btn">
+                        <a class="cards" href="reg-form.html">
+                            <img class=" logo-img" src="" alt="logo">
+                            <h3 class="cards-name">Название хакатона</h3>
+                            <ul class="description">
+                                <li>КЕЙСЫ</li>
+                                <li>ТЕМАТИКА</li>
+                                <li>ГЛАВНЫЙ ПРИЗ</li>
+                            </ul>
+                            <p class="cards-date">XX.XX.XXXX дата регистрации</p>
+                            <p class="cards-date">XX.XX.XXXX начало хакатона</p>
+                        </a>
+                    </div>
+
+                    <div id="cards-btn">
+                        <a class="cards" href="reg-form.html">
+                            <img class=" logo-img" src="" alt="logo">
+                            <h3 class="cards-name">Название хакатона</h3>
+                            <ul class="description">
+                                <li>КЕЙСЫ</li>
+                                <li>ТЕМАТИКА</li>
+                                <li>ГЛАВНЫЙ ПРИЗ</li>
+                            </ul>
+                            <p class="cards-date">XX.XX.XXXX дата регистрации</p>
+                            <p class="cards-date">XX.XX.XXXX начало хакатона</p>
+                        </a>
+                    </div>
+
+                </div>
+        </div>
+        <div class="footer">
+            <button class="button-footer"><a href="index.html">Главная</a></button>
+            <button class="button-footer">Хакатоны</button>
+        </div>
+    </div>
+
+
+</body>
+
+
+
+</html>

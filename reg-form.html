@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    *,
+    *::before,
+    *::after {
+        box-sizing: inherit;
+    }
+
+    body {
+        box-sizing: border-box;
+        font-size: 16px;
+        color: white;
+        background: black;
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        margin: 0;
+    }
+
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .img-back {
+        background-color: black;
+        height: 100%;
+        width: 100%;
+        position: fixed;
+    }
+
+    .img-1 {
+        position: fixed;
+        width: 95%;
+        top: -10%;
+        left: 40%;
+    }
+
+    .img-2 {
+        position: absolute;
+        top: 54%;
+        left: -65%;
+    }
+
+    .registration-form {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        padding: 30px;
+    }
+
+    .registration-form h2 {
+        font-family: 'tektur';
+        font-size: 40px;
+        margin: 0;
+    }
+
+    .registration-form h2::after {
+        content: attr(data-end);
+        color: #00FCBF;
+    }
+
+    .input-field input{
+        border: 2px solid #00FCBF;
+        background-color: black;
+        border-radius: 6px;
+        height: 41px;
+        width: 100%;
+        margin: 10px 0;
+        font-family: 'bebas neue';
+        font-size: 20px;
+        padding-top: 5px;
+        padding-left: 10px;
+        color: #C3C3C3;
+    }
+
+    .input-field input::placeholder {
+        background-color: black;
+        color: #C3C3C3;
+    }
+
+
+    .input-field-select-option select{
+        border: 2px solid #00FCBF;
+        background-color: black;
+        border-radius: 6px;
+        height: 41px;
+        width: 100%;
+        margin: 10px 0;
+        font-family: 'bebas neue';
+        font-size: 20px;
+        padding-top: 5px;
+        padding-left: 10px;
+        color: #C3C3C3;
+    }
+
+    .btn-reg {
+        position: fixed;
+        top: 110%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border: 2px solid #00FCBF;
+        background-color: black;
+        border-radius: 42px;
+        height: 50px;
+        width: 291px;
+        padding-top: 5px;
+        color: white;
+        font-family: 'bebas neue';
+        font-size: 20px;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    .btn-back {
+        position: fixed;
+        top: 95%;
+        left: 90%;
+        border: none;
+        transform: translate(-50%, -50%);
+        background-color: black;
+        padding-top: 5px;
+        color: white;
+        font-family: 'bebas neue';
+        font-size: 20px;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    
+</style>
+
+<body>
+
+    <div class="img-back">
+        <img class="img-1" src="/img/linetop3.png" alt="">
+        <img class="img-2" src="/img/linebottom3.png" alt="">
+    </div>
+
+    <form class="registration-form" id="registration" method="post">
+        <h2 data-end=".">Регистрация</h2>
+
+        <div class="input-field">
+            <input type="text" id="username" placeholder="ФИО" maxlength="50" required>
+        </div>
+        <div class="input-field-select-option">
+            <select id="studentSelect" required>
+                <option value="">Выберите из предложенного</option>
+                <option value="1">Я студент РТУ МИРЭА</option>
+                <option value="0">Я учусь в другом месте</option>
+            </select>
+        </div>
+        <button class="btn-reg" id="reg-btn">Зарегистрироваться</button>
+    </form>
+
+    <button class="btn-back"><a href="/catalog.html">НАЗАД</a></button>
+</body>
+
+</html>

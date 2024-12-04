@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>profile</title>
+    <link rel="stylesheet" href="/css/normalize.css">
+    <style>
+        *,
+        *::before,
+        *::after {
+            box-sizing: inherit;
+        }
+
+        body {
+            box-sizing: border-box;
+            font-size: 16px;
+            color: white;
+            background: black;
+            width: 100vw;
+            height: 100vh;
+            position: fixed;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        p {
+            padding: 0;
+            margin: 0;
+        }
+
+        main {
+            padding: 22px;
+        }
+
+        .back-img img {
+            width: 578px;
+            z-index: 0;
+        }
+
+        .user-info {
+            z-index: 1;
+            background: linear-gradient(45deg, #29574C, black);
+            display: flex;
+            align-items: center;
+            border-radius: 15px;
+            box-shadow: 0 0 10px #00FCBF;
+        }
+
+        .user-info p {
+            font-family: 'bebas neue';
+            font-size: 32px;
+            margin: 0;
+            font-weight: 400;
+            margin-left: 10px;
+            margin-top: 5px;
+        }
+
+        .user-info img {
+            width: 80px;
+            height: 80px;
+            margin: 7px;
+            box-shadow: 0 0 5px #00FCBF;
+            border-radius: 10px;
+            margin-left: 10px;
+        }
+
+        .x-info {
+            height: 39em;
+            margin-top: 20px;
+            background: linear-gradient(90deg, #29574C, black);
+            border-radius: 15px;
+            box-shadow: 0 0 10px #00FCBF;
+            padding: 5px 10px;
+
+        }
+
+        .x-info h2 {
+            font: 500 20px 'gilroy';
+            color: #00FCBF;
+        }
+
+        .x-info p {
+            font: 16px 'gilroy';
+        }
+
+        .hr-dashed {
+            margin: 20px 0;
+            padding: 0;
+            height: 0;
+            border: none;
+            border-top: 5px dashed #0DA07C;
+        }
+
+        .btn-T {
+            display: grid;
+            gap: 10px;
+            height: 170px;            
+        }
+        .btn-T button {
+            border-radius: 10px;
+            background: #00FCBF;
+            font: 500 16px 'gilroy';
+            text-transform: uppercase;
+        }
+
+
+        footer {
+            position: fixed;
+            align-items: flex-end;
+            background-color: #00FCBF;
+            bottom: 0;
+            display: flex;
+            justify-content: space-evenly;
+            width: 100%;
+            padding: 7px 0;
+            z-index: 10;
+        }
+
+        .button-footer {
+            background-color: #00FCBF;
+            border: solid 2px #29574C;
+            background-color: #29574C;
+            border-radius: 10px;
+            width: 47%;
+            height: 50px;
+            color: white;
+            font-family: 'tektur';
+            font-size: 20px;
+            cursor: pointer;
+            padding: 2px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <div class="back-img"><img src="/img/Vector.png" alt=""></div> -->
+    <main>
+        <div class="user-info">
+            <img src="" alt="photo">
+            <p>НИКНЕЙМ УЧАСТНИКА</p>
+        </div>
+        <div class="x-info">
+            <h2>УЧАСТИЕ В ХАКАТОНЕ:</h2>
+            <div style="display:flex; justify-content: space-between">
+                <p>НАЗВАНИЕ ХАКАТОНА</p>
+                <p style="padding-right: 1em;">XX.XX.XXXX</p>
+            </div>
+            <hr class="hr-dashed">
+            <div class="btn-T">
+                <button>создать команду</button>
+                <button>присоединиться к команде</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <button class="button-footer"><a href="index.html">Главная</a></button>
+        <button class="button-footer">Хакатоны</button>
+    </footer>
+</body>
+
+</html>
